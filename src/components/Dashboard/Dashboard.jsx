@@ -396,7 +396,7 @@ const Dashboard = () => {
           </h3>
           <div className="space-y-3">
             <button
-              className="w-full flex items-center space-x-3 p-3 bg-slate-50 hover:bg-slate-100 rounded-md transition-colors"
+              className="w-full flex items-center space-x-3 p-3 cursor-pointer bg-slate-50 hover:bg-slate-100 rounded-md transition-colors"
               onClick={() => {
                 setInvoiceForm({
                   id: "",
@@ -409,21 +409,21 @@ const Dashboard = () => {
               }}
             >
               <Plus className="h-4 w-4 text-slate-600" />
-              <span className="text-sm font-medium text-slate-900 cursor-pointer">
+              <span className="text-sm font-medium text-slate-900">
                 Create Invoice
               </span>
             </button>
             <button
-              className="w-full flex items-center space-x-3 p-3 bg-slate-50 hover:bg-slate-100 rounded-md transition-colors"
+              className="w-full flex items-center space-x-3 p-3 bg-slate-50 hover:bg-slate-100 cursor-pointer rounded-md transition-colors"
               onClick={() => setShowPropertyModal(true)}
             >
               <Building className="h-4 w-4 text-slate-600" />
-              <span className="text-sm font-medium text-slate-900 cursor-pointer">
+              <span className="text-sm font-medium text-slate-900">
                 Add Property
               </span>
             </button>
             <button
-              className="w-full flex items-center space-x-3 p-3 bg-slate-50 hover:bg-slate-100 rounded-md transition-colors"
+              className="w-full flex items-center space-x-3 p-3 bg-slate-50 hover:bg-slate-100 rounded-md transition-colors cursor-pointer"
               onClick={() => {
                 setTenantForm({
                   name: "",
@@ -436,7 +436,7 @@ const Dashboard = () => {
               }}
             >
               <Users className="h-4 w-4 text-slate-600" />
-              <span className="text-sm font-medium text-slate-900 cursor-pointer">
+              <span className="text-sm font-medium text-slate-900">
                 Add Tenant
               </span>
             </button>
